@@ -12,11 +12,11 @@ puts 'Cleaning database.....'
 Restaurant.destroy_all
 
 puts "Creating restaurants..."
-bristol = { name: 'Epicure', address: '75008 Paris',category: 'french' }
-pure_south_dining = { name: 'Pure South Dining', address: 'Southbank',category: 'italian'}
-entrecote = { name: 'Entrecôte', address: 'Prahran',category: 'french' }
-flower_drum = { name: 'Flower Drum', address: 'Market Lane, Melbourne',category: 'chinese' }
-kisume = { name: 'Kisumé', address: 'Flinders Lane, Melbourne',category: 'japanese' }
+bristol = { name: 'Epicure', address: '75008 Paris', phone_number: '0437491034', category: 'french' }
+pure_south_dining = { name: 'Pure South Dining', address: 'Southbank', phone_number: '03312381', category: 'italian'}
+entrecote = { name: 'Entrecôte', address: 'Prahran', phone_number: '0478085743', category: 'french' }
+flower_drum = { name: 'Flower Drum', address: 'Market Lane, Melbourne',  phone_number: '91297321', category: 'chinese' }
+kisume = { name: 'Kisumé', address: 'Flinders Lane, Melbourne', phone_number: '120397641', category: 'japanese' }
 
 [bristol, pure_south_dining, entrecote, flower_drum, kisume].each do |attributes|
   restaurant = Restaurant.create!(attributes)
